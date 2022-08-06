@@ -37,4 +37,10 @@ public class Category {
 	@OneToMany(mappedBy = "category", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
 	private List<Post> posts = new ArrayList<>();
 
+	@Override
+	public String toString() {
+		return "Category [categoryId=" + categoryId + ", categoryTitle=" + categoryTitle + ", categoryDescription="
+				+ categoryDescription + ", posts=" + posts + "]";
+	}
+
 }

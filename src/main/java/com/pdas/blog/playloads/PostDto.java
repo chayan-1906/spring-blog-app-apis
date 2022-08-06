@@ -24,4 +24,11 @@ public class PostDto {
 	private CategoryDto category;
 
 	private UserDto user;
+
+	@Override
+	public String toString() {
+		return "PostDto [postId=" + postId + ", title=" + title + ", content=" + content + ", imageName=" + imageName
+				+ ", addedDate=" + addedDate + ", category=" + category + ", user=" + user + "]";
+	}
+
 }
